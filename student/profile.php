@@ -23,9 +23,9 @@ if (isset($_POST['Submit']))
     $txtUsername = $_POST['txtUsername'];
     $txtPassword = $_POST['txtPassword'];
 
-    if ($conn->connect_error) {
+    if ($conn-> connect_error) {
         //stop executing the code and echo error
-    die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conn-> connect_error);
     }else{
         // echo "connection works";
         // //encrypt password

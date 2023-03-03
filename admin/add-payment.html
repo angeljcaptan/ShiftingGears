@@ -9,10 +9,7 @@
       <link rel="stylesheet" href="../asset/css/adminlte.min.css">
       <link rel="stylesheet" href="../asset/css/animate.min.css">
       <link rel="stylesheet" href="../asset/css/style.css">
-      <!-- DataTables -->
-      <link rel="stylesheet" href="../asset/tables/datatables-bs4/css/dataTables.bootstrap4.min.css">
-      <link rel="stylesheet" href="../asset/tables/datatables-responsive/css/responsive.bootstrap4.min.css">
-      <link rel="stylesheet" href="../asset/tables/datatables-buttons/css/buttons.bootstrap4.min.css">
+
    </head>
    <body class="hold-transition sidebar-mini layout-fixed">
       <div class="wrapper">
@@ -35,7 +32,7 @@
          <!-- /.navbar -->
          <!-- Main Sidebar Container -->
          <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: rgba(62,88,113);">
-            <!-- Brand Logo -->
+                        <!-- Brand Logo -->
             <a href="index.html" class="brand-link animated swing">
             <img src="../asset/img/logo1.png" alt="DSMS Logo" width="200">
             </a>
@@ -176,13 +173,13 @@
                <div class="container-fluid">
                   <div class="row mb-2">
                      <div class="col-sm-6 animated bounceInRight">
-                        <h1 class="m-0"><span class="fa fa-book"></span> Enrollments List</h1>
+                        <h1 class="m-0"><span class="fa fa-money-bill"></span> Add Payment</h1>
                      </div>
                      <!-- /.col -->
                      <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                           <li class="breadcrumb-item active">Enrollments</li>
+                           <li class="breadcrumb-item active">Add Payment</li>
                         </ol>
                      </div>
                      <!-- /.col -->
@@ -195,47 +192,65 @@
             <!-- Main content -->
             <section class="content">
                <div class="container-fluid">
-                  <div class="card-body animated pulse">
-                     <table id="example1" class="table table-bordered table-striped">
-                        <thead>
-                           <tr>
-                              <th>Schedule Code#</th>
-                              <th>Student Name</th>
-                              <th>Instructor</th>
-                              <th>Remarks</th>
-                              <th>Action</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>SCHD-123</td>
-                              <td class="text-info">Juan Dela Cruz</td>
-                              <td class="text-danger">John Doe</td>
-                              <td>Remarks</td>
-                              <td class="text-right">
-                                 <a class="btn btn-sm btn-success" href="#"><i
-                                    class="fa fa-pen"></i></a>
-                                 <a class="btn btn-sm btn-danger" href="#" data-toggle="modal"
-                                    data-target="#delete"><i
-                                    class="fa fa-trash"></i></a>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>SCHD-123</td>
-                              <td class="text-info">Juan Dela Cruz</td>
-                              <td class="text-danger">John Doe</td>
-                              <td>Remarks</td>
-                              <td class="text-right">
-                                 <a class="btn btn-sm btn-success" href="#"><i
-                                    class="fa fa-pen"></i></a>
-                                 <a class="btn btn-sm btn-danger" href="#" data-toggle="modal"
-                                    data-target="#delete"><i
-                                    class="fa fa-trash"></i></a>
-                              </td>
-                           </tr>
-                           </tfoot>
-                     </table>
+                  <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">Payment Information</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form>
+                <div class="card-body">
+                  <div class="row">
+                  <div class="col-md-12">
+                     <div class="card-header">
+                        <span class="fa fa-money-bill"> Payment Information</span>
+              </div>
+                  <div class="row">
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Reference Number</label>
+                    <input type="number" class="form-control" placeholder="reference">
                   </div>
+               </div>
+                  <div class="col-md-6">
+                  <div class="form-group">
+                        <label>Students</label>
+                        <select class="form-control">
+                          <option>John Doe</option>
+                          <option>Juan Del Cruz</option>
+                        </select>
+                      </div>
+               </div>
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Amount</label>
+                    <input type="number" class="form-control" placeholder="amount">
+                  </div>
+               </div>
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Date Of Payment</label>
+                    <input type="date" class="form-control" placeholder="reference">
+                  </div>
+               </div>
+                  <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Remarks</label>
+                    <input type="text" class="form-control" placeholder="remarks">
+                  </div>
+               </div>
+            </div>
+              </div>
+                  </div>
+
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+              </form>
+            </div>
                </div>
                <!-- /.container-fluid -->
             </section>
@@ -244,32 +259,9 @@
          <!-- /.content-wrapper -->
       </div>
       <!-- ./wrapper -->
-            <div id="delete" class="modal animated rubberBand delete-modal" role="dialog">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body text-center">
-                            <img src="../asset/img/sent.png" alt="" width="50" height="46">
-                            <h3>Are you sure want to delete this Enrollment List?</h3>
-                            <div class="m-t-20"> <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
-                                <button type="submit" class="btn btn-danger">Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
       <!-- jQuery -->
       <script src="../asset/jquery/jquery.min.js"></script>
-      <script src="../asset/js/bootstrap.bundle.min.js"></script>
       <script src="../asset/js/adminlte.js"></script>
-      <!-- DataTables  & Plugins -->
-      <script src="../asset/tables/datatables/jquery.dataTables.min.js"></script>
-      <script src="../asset/tables/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-      <script src="../asset/tables/datatables-responsive/js/responsive.bootstrap4.min.js"></script>s
-      <script src="../asset/tables/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-      <script>
-         $(function () {
-           $("#example1").DataTable();
-         });
-      </script>
+
    </body>
 </html>

@@ -176,13 +176,13 @@
                <div class="container-fluid">
                   <div class="row mb-2">
                      <div class="col-sm-6 animated bounceInRight">
-                        <h1 class="m-0"><span class="fa fa-book"></span> Enrollments List</h1>
+                        <h1 class="m-0"><span class="fa fa-money-bill"></span> Payments List</h1>
                      </div>
                      <!-- /.col -->
                      <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                           <li class="breadcrumb-item active">Enrollments</li>
+                           <li class="breadcrumb-item active">Payments</li>
                         </ol>
                      </div>
                      <!-- /.col -->
@@ -199,18 +199,20 @@
                      <table id="example1" class="table table-bordered table-striped">
                         <thead>
                            <tr>
-                              <th>Schedule Code#</th>
+                              <th>Ref No.</th>
                               <th>Student Name</th>
-                              <th>Instructor</th>
+                              <th>Amount</th>
+                              <th>Date of Payment</th>
                               <th>Remarks</th>
                               <th>Action</th>
                            </tr>
                         </thead>
                         <tbody>
                            <tr>
-                              <td>SCHD-123</td>
-                              <td class="text-info">Juan Dela Cruz</td>
-                              <td class="text-danger">John Doe</td>
+                              <td>REF-123</td>
+                              <td>Juan Dela Cruz</td>
+                              <td><span class="badge bg-warning">3,500</span></td>
+                              <td>06-02-2021</td>
                               <td>Remarks</td>
                               <td class="text-right">
                                  <a class="btn btn-sm btn-success" href="#"><i
@@ -221,9 +223,10 @@
                               </td>
                            </tr>
                            <tr>
-                              <td>SCHD-123</td>
-                              <td class="text-info">Juan Dela Cruz</td>
-                              <td class="text-danger">John Doe</td>
+                              <td>REF-456</td>
+                              <td>Jane Doe</td>
+                              <td><span class="badge bg-warning">4,500</span></td>
+                              <td>06-02-2021</td>
                               <td>Remarks</td>
                               <td class="text-right">
                                  <a class="btn btn-sm btn-success" href="#"><i
@@ -249,7 +252,7 @@
                     <div class="modal-content">
                         <div class="modal-body text-center">
                             <img src="../asset/img/sent.png" alt="" width="50" height="46">
-                            <h3>Are you sure want to delete this Enrollment List?</h3>
+                            <h3>Are you sure want to delete this Payment?</h3>
                             <div class="m-t-20"> <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
                                 <button type="submit" class="btn btn-danger">Delete</button>
                             </div>

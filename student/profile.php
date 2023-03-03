@@ -39,7 +39,7 @@ if (isset($_POST['Submit']))
     // insert in database
     $rs = mysqli_query($con, $sql);
 
-    if ($conn->query($sql) === TRUE) {
+    if ($conn->query($sql)) {
         echo "wow";
       
         //redirect to homepage

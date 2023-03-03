@@ -3,13 +3,13 @@ ul li p{
 }
 
 .bg-1{
-	background-color: rgba(20,143,119);
+	background-color: rgb(51, 97, 88);
 }
 .bg-2{
-	background-color: rgba(241,196,15);
+	background-color: rgb(114, 78, 143);
 }
 .bg-3{
-	background-color: rgba(253,132,105);
+	background-color: rgb(162, 105, 253);
 }
 
 .brand-link

@@ -26,7 +26,7 @@ if (isset($_POST['Submit']))
     if ($conn-> connect_error) {
         //stop executing the code and echo error
     die("Connection failed: " . $conn-> connect_error);
-    }else{
+    } else{
         // echo "connection works";
         // //encrypt password
         // //use the php password_hard function
